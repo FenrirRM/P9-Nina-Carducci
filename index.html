@@ -11,13 +11,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	
-	 <!-- Scripts -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
-	<script src="./assets/maugallery.min.js" defer></script>
-	<script src="./assets/scripts.min.js" defer></script>
-
-	<!-- Twitter card meta -->
+	 <!-- Twitter card meta -->
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@nina_carducci" />
 	<meta name="twitter:title" content="Nina Carducci - Photographe à Bordeaux" />
@@ -33,6 +27,25 @@
 	<meta property="og:description" content="Découvrez Nina carducci, photographe professionnelle à Bordeaux et les services proposés comme le shooting photo, retouches et albums photos" />
 	<meta property="og:image" content="https://monsiteweb/images/uneimage.jpg" />
  
+	<!-- Google Rich Snippets -->
+	<script type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type": "LocalBusiness",
+		  "name": "Nina Carducci - Photographie",
+		  "image": "https://fenrirrm.github.io/P9-Nina-Carducci/assets/images/nina.webp",
+		  "address": {
+			"@type": "PostalAddress",
+			"streetAddress": "68 avenue Alsace-Lorraine",
+			"addressLocality": "Bordeaux",
+			"addressRegion": "Gironde",
+			"postalCode": "33200",
+			"country": "France"
+		  },
+		  "telephone": "+33 5 56 67 78 89",
+		  "openingHours": "Mo-Fr 10:00-19:00"
+		}
+	  </script>
 </head>
 <body>
 <header>
@@ -44,7 +57,7 @@
 			<li><a href="#gallery">Galerie</a></li>
 			<li><a href="#services">Service</a></li>
 			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img width="100%" height="100%" src="assets/images/instagram.png" alt="logo instagram"></a></li>
+			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="logo instagram"></a></li>
 		</ul>
 	</div>
 </div>
@@ -62,19 +75,19 @@
 			<div class="carousel-item active">
 				<picture>
 					<source media="(max-width: 650px)" srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_650.webp" />
-					<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="Photo d'un homme sur un passage piéton" width="100%" height="100%" >
+					<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="Photo d'un homme sur un passage piéton"  >
 				</picture>
 			</div>
 			<div class="carousel-item">
 				<picture>
 					<source media="(max-width: 650px)" srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_650.webp" />
-					<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100" alt="Photo de festivaliers lors d'un concert" width="100%" height="100%" loading="lazy">
+					<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100" alt="Photo de festivaliers lors d'un concert"  loading="lazy">
 				</picture>
 			</div>
 			<div class="carousel-item">
 				<picture>
 					<source media="(max-width: 650px)" srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash_650.webp" />
-					<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100" alt="Photo d'un couple de mariée s'embrassant" width="100%" height="100%" loading="lazy">
+					<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100" alt="Photo d'un couple de mariée s'embrassant"  loading="lazy">
 				</picture>
 			</div>
 		</div>
@@ -91,7 +104,7 @@
 <section>
 <div id="about">
 	<div class="picture left">
-		<img width="100%" height="100%" src="./assets/images/nina.webp" alt="Photo de Nina Carducci">
+		<img src="./assets/images/nina.webp" alt="Photo de Nina Carducci">
 	</div>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
@@ -191,10 +204,16 @@
 			</form>
 		</div>
 		<div class="picture right">
-			<img width="100%" height="100%" src="./assets/images/camera.webp" alt="Photo d'un appareil photo">
+			<img src="./assets/images/camera.webp" alt="Photo d'un appareil photo">
 		</div>
 	</div>
 </div>
 </footer>
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="./assets/maugallery.min.js" ></script>
+<script src="./assets/scripts.min.js" ></script>
+<script src="./assets/bootstrap/bootstrap.bundle.min.js" ></script>
 </body>
+
 </html>
