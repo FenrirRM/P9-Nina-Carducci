@@ -72,7 +72,9 @@ body {
 
 }
 #about-me {
-	flex: 2
+	flex: 2;
+	width: 80%;
+	font-size: 14px;
 }
 .about-me__title {
 	margin-top: 1em;
@@ -85,11 +87,9 @@ body {
 	font-style: italic;
 	width: 60%;
 	font-size: 1rem;
+	line-height: 1.2;
 }
-#about-me p {
-	width: 80%;
-	font-size: 14px;
-}
+
 
 #gallery {
 	/*	min-height: 100vh; */

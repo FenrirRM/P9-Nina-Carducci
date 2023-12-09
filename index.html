@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+	<title>Nina Carducci - Photographe à Bordeaux</title>
+	<meta name="description" content="Portfolio de Nina Carducci, photographe professionnel à Bordeaux - Services de Shooting photo, Retouches et Album photos">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" href="./assets/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-	<meta charset="UTF-8">
-	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
+	
+	 <!-- Scripts -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js" defer></script>
-	<script src="./assets/scripts.js" defer></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
+	<script src="./assets/maugallery.min.js" defer></script>
+	<script src="./assets/scripts.min.js" defer></script>
 
-	<meta name="description" content="Portfolio de Nina Carducci, photographe professionnel à Bordeaux - Services de Shooting photo, Retouches et Album photos">
-	<title>Nina Carducci - Photographe à Bordeaux</title>
+	<!-- Twitter card meta -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@nina_carducci" />
+	<meta name="twitter:title" content="Nina Carducci - Photographe à Bordeaux" />
+	<meta name="twitter:description" content="Découvrez Nina carducci, photographe professionnelle à Bordeaux et les services proposés comme le shooting photo, retouches et albums photos" />
+	<meta name="twitter:url" content="https://fenrirrm.github.io/P9-Nina-Carducci/" />
+	<meta name="twitter:image" content="https://fenrirrm.github.io/P9-Nina-Carducci/assets/images/nina.webp" />
+
+	<!-- Open Graph meta -->
+	<meta property="og:site_name" content="Nina Carducci - Photographe à Bordeaux" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://fenrirrm.github.io/P9-Nina-Carducci/" />
+	<meta property="og:title" content="Nina Carducci - Photographe à Bordeaux" />
+	<meta property="og:description" content="Découvrez Nina carducci, photographe professionnelle à Bordeaux et les services proposés comme le shooting photo, retouches et albums photos" />
+	<meta property="og:image" content="https://monsiteweb/images/uneimage.jpg" />
+ 
 </head>
 <body>
+<header>
 <div class="top-header">
 	<h1 class="name">Nina Carducci</h1>
 	<div class="nav">   
@@ -25,10 +44,12 @@
 			<li><a href="#gallery">Galerie</a></li>
 			<li><a href="#services">Service</a></li>
 			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="logo instagram"></a></li>
+			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img width="100%" height="100%" src="assets/images/instagram.png" alt="logo instagram"></a></li>
 		</ul>
 	</div>
 </div>
+</header>
+<main>
 <div id="header">
 
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -39,13 +60,22 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="Photo d'un homme sur un passage piéton" >
+				<picture>
+					<source media="(max-width: 650px)" srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_650.webp" />
+					<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="Photo d'un homme sur un passage piéton" width="100%" height="100%" >
+				</picture>
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100" alt="Photo de festivaliers lors d'un concert" loading="lazy">
+				<picture>
+					<source media="(max-width: 650px)" srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_650.webp" />
+					<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100" alt="Photo de festivaliers lors d'un concert" width="100%" height="100%" loading="lazy">
+				</picture>
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100" alt="Photo d'un couple de mariée s'embrassant" loading="lazy">
+				<picture>
+					<source media="(max-width: 650px)" srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash_650.webp" />
+					<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100" alt="Photo d'un couple de mariée s'embrassant" width="100%" height="100%" loading="lazy">
+				</picture>
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -58,17 +88,20 @@
 		</button>
 	</div>
 </div>
+<section>
 <div id="about">
 	<div class="picture left">
-		<img src="./assets/images/nina.webp" alt="Photo de Nina Carducci">
+		<img width="100%" height="100%" src="./assets/images/nina.webp" alt="Photo de Nina Carducci">
 	</div>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
-		<h3 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h3>
+		<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
 </div>
+</section>
+<section>
 <div id="gallery">
 	<h2 class="title">Portfolio</h2>
 	<div class="container py-3">
@@ -93,10 +126,12 @@
 		</figure>
 	</div>
 </div>
+</section>
+<section>
 <div id="services">
 	<h2 class="title">Mes services</h2>
 	<div class="container">
-		<div class="service">
+		<article class="service">
 			<div class="service__description">
 				<h3>Shooting photo</h3>
 				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
@@ -106,8 +141,8 @@
 				<span>Matériel, déplacement inclus</span>
 			</div>
 
-		</div>
-		<div class="service">
+		</article>
+		<article class="service">
 			<div class="service__description">
 				<h3>Retouches</h3>
 				<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
@@ -116,8 +151,8 @@
 				<h4>50€/photo</h4>
 				<span>2 AR par photo</span>
 			</div>
-		</div>
-		<div class="service">
+		</article>
+		<article class="service">
 			<div class="service__description">
 				<h3>Album photos</h3>
 				<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
@@ -126,9 +161,10 @@
 				<h4>400€ album A4</h4>
 				<span>30 pages recto/verso</span>
 			</div>
-		</div>
+		</article>
 	</div>
 </div>
+</section>
 <div class="quote">
 	<figure>
 		<blockquote>
@@ -137,6 +173,8 @@
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
 </div>
+</main>
+<footer>
 <div id="contact">
 	<div class="container">
 		<div class="form-container">
@@ -153,9 +191,10 @@
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera.webp" alt="Photo d'un appareil photo">
+			<img width="100%" height="100%" src="./assets/images/camera.webp" alt="Photo d'un appareil photo">
 		</div>
 	</div>
 </div>
+</footer>
 </body>
 </html>
